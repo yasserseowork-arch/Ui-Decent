@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decent | Personalized Name Bags — New Storefront Proposal (Prototype)</title>
+<meta name="description" content="Hand bags, travel bags and name packages from Decent — handmade canvas, 3-day preparation, free shipping over SAR 405, and easy installments with Tabby.">
+
+<link href="https://cdn.salla.network/fonts/pingarlt.css?v=0.2" rel="stylesheet">
+<style>
+
+:root{
+  --color-primary:#583300;
+  --color-primary-dark:#320d00;
+  --color-primary-light:#7e5926;
+  --color-primary-reverse:#ffffcc;
+  --card-outline:#583400;   
+  --chip-grey:#e5e7eb;      
+  --sand-50:#FFFCF7;
+  --sand-100:#F6EFE4;
+  --sand-200:#EDE2D0;
+  --sand-300:#DFCFB6;
+  --taupe:#9C8468;
+  --ink:#241A10;
+  --ink-soft:#6B5B49;
+  --line:#E6DAC6;
+  --white:#fff;
+  --ok:#2E7D4F;
+  --danger:#B3402A;
+  --radius:14px;
+  --radius-lg:22px;
+  --shadow-sm:0 1px 2px rgba(50,13,0,.06),0 2px 8px rgba(50,13,0,.05);
+  --shadow-md:0 6px 24px rgba(50,13,0,.10);
+  --shadow-lg:0 18px 50px rgba(50,13,0,.16);
+  --font:'PingARLT','SF Arabic','Segoe UI',Tahoma,Arial,sans-serif;
+  --serif:Georgia,'Times New Roman',serif;
+  --header-h:74px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--sand-50) url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='720' height='720' viewBox='0 0 720 720'><g transform='translate(102 82) rotate(-14) scale(1)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-34 -20h68q4 0 3.5 4l-7 44q-.5 4-4.5 4H-46q-4 0-4.5-4l-7-44q-.5-4 3.5-4z'/><path d='M-15 -20c0-14 6.5-23 15-23s15 9 15 23'/><path d='M-9 -20c0-10 4-17 9-17s9 7 9 17'/><path d='M-7 -16v44M0 -16v44M7 -16v44'/><path d='M-30 -12h60' stroke-dasharray='3 4'/></g></g><g transform='translate(260 104) rotate(9) scale(0.92)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-20 -12h32q5 0 5 5v16q0 5-5 5h-32l-9-13z'/><circle cx='-15' cy='1' r='2.6'/><path d='M-29 1q-11 5-15 15'/></g></g><g transform='translate(456 100) rotate(-7) scale(1.06)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='-33' y='-24' width='66' height='48' rx='9'/><path d='M-33 0h66'/><path d='M-9 -24v-6q0-4 4-4h10q4 0 4 4v6'/><circle cx='-22' cy='30' r='3'/><circle cx='22' cy='30' r='3'/></g></g><g transform='translate(616 84) rotate(16) scale(0.96)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-26 0q20-13 40-1' stroke-dasharray='4 5'/><path d='M14 -1l11-7'/><circle cx='26.5' cy='-9' r='1.6'/></g></g><g transform='translate(99 282) rotate(5) scale(1.04)'><text x='0' y='0' text-anchor='middle' dominant-baseline='central' font-family='Georgia,serif' font-size='30' fill='%23583300' fill-opacity='.085'>D.</text></g><g transform='translate(263 258) rotate(-11) scale(0.9)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='-9' cy='7' r='7'/><circle cx='-9' cy='7' r='3.2'/><path d='M10 4c-5.5-3.7-9-7.3-9-11 0-2.8 2-4.7 4.6-4.7 1.8 0 3.4 1 4.4 2.7 1-1.7 2.6-2.7 4.4-2.7 2.6 0 4.6 1.9 4.6 4.7 0 3.7-3.5 7.3-9 11z'/></g></g><g transform='translate(464 275) rotate(12) scale(1)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-34 -20h68q4 0 3.5 4l-7 44q-.5 4-4.5 4H-46q-4 0-4.5-4l-7-44q-.5-4 3.5-4z'/><path d='M-15 -20c0-14 6.5-23 15-23s15 9 15 23'/><path d='M-9 -20c0-10 4-17 9-17s9 7 9 17'/><path d='M-7 -16v44M0 -16v44M7 -16v44'/><path d='M-30 -12h60' stroke-dasharray='3 4'/></g></g><g transform='translate(618 279) rotate(-5) scale(1.08)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='-33' y='-24' width='66' height='48' rx='9'/><path d='M-33 0h66'/><path d='M-9 -24v-6q0-4 4-4h10q4 0 4 4v6'/><circle cx='-22' cy='30' r='3'/><circle cx='22' cy='30' r='3'/></g></g><g transform='translate(94 436) rotate(8) scale(0.94)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-20 -12h32q5 0 5 5v16q0 5-5 5h-32l-9-13z'/><circle cx='-15' cy='1' r='2.6'/><path d='M-29 1q-11 5-15 15'/></g></g><g transform='translate(261 457) rotate(-16) scale(1.02)'><text x='0' y='0' text-anchor='middle' dominant-baseline='central' font-family='Georgia,serif' font-size='30' fill='%23583300' fill-opacity='.085'>D.</text></g><g transform='translate(461 445) rotate(4) scale(0.9)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-26 0q20-13 40-1' stroke-dasharray='4 5'/><path d='M14 -1l11-7'/><circle cx='26.5' cy='-9' r='1.6'/></g></g><g transform='translate(625 463) rotate(10) scale(1.05)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-34 -20h68q4 0 3.5 4l-7 44q-.5 4-4.5 4H-46q-4 0-4.5-4l-7-44q-.5-4 3.5-4z'/><path d='M-15 -20c0-14 6.5-23 15-23s15 9 15 23'/><path d='M-9 -20c0-10 4-17 9-17s9 7 9 17'/><path d='M-7 -16v44M0 -16v44M7 -16v44'/><path d='M-30 -12h60' stroke-dasharray='3 4'/></g></g><g transform='translate(98 620) rotate(-9) scale(0.97)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='-33' y='-24' width='66' height='48' rx='9'/><path d='M-33 0h66'/><path d='M-9 -24v-6q0-4 4-4h10q4 0 4 4v6'/><circle cx='-22' cy='30' r='3'/><circle cx='22' cy='30' r='3'/></g></g><g transform='translate(257 626) rotate(14) scale(1.03)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><circle cx='-9' cy='7' r='7'/><circle cx='-9' cy='7' r='3.2'/><path d='M10 4c-5.5-3.7-9-7.3-9-11 0-2.8 2-4.7 4.6-4.7 1.8 0 3.4 1 4.4 2.7 1-1.7 2.6-2.7 4.4-2.7 2.6 0 4.6 1.9 4.6 4.7 0 3.7-3.5 7.3-9 11z'/></g></g><g transform='translate(456 638) rotate(-4) scale(0.93)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-20 -12h32q5 0 5 5v16q0 5-5 5h-32l-9-13z'/><circle cx='-15' cy='1' r='2.6'/><path d='M-29 1q-11 5-15 15'/></g></g><g transform='translate(622 621) rotate(7) scale(1)'><g fill='none' stroke='%23583300' stroke-opacity='.085' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M-26 0q20-13 40-1' stroke-dasharray='4 5'/><path d='M14 -1l11-7'/><circle cx='26.5' cy='-9' r='1.6'/></g></g></svg>") repeat;background-size:720px 720px;color:var(--ink);font-size:15px;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit;font-size:inherit}
+.container{width:min(1200px,92%);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skip{position:fixed;top:-60px;inset-inline-start:16px;background:var(--color-primary);color:#fff;padding:10px 18px;border-radius:8px;z-index:200;transition:top .2s}
+.skip:focus{top:12px}
+::selection{background:var(--color-primary);color:var(--color-primary-reverse)}
+
+
+.announce{background:var(--color-primary-dark);color:var(--color-primary-reverse);font-size:13px;height:38px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.announce .msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:8px;opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s;white-space:nowrap}
+.announce .msg.on{opacity:1;transform:none}
+.announce .msg b{font-weight:700}
+
+
+header.site{position:sticky;top:0;z-index:90;background:rgba(255,252,247,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:box-shadow .25s,border-color .25s}
+header.site.scrolled{border-color:var(--line);box-shadow:var(--shadow-sm)}
+.header-in{height:var(--header-h);display:flex;align-items:center;gap:26px}
+.logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo img{height:44px;width:auto}
+.logo .word{font-weight:700;font-size:20px;letter-spacing:.5px;color:var(--color-primary-dark)}
+.header-actions{margin-inline-start:auto;display:flex;align-items:center;gap:6px}
+.icon-btn{position:relative;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:var(--color-primary-dark);transition:.2s}
+.langsw{height:34px;padding:0 12px;border-radius:999px;border:1.5px solid var(--color-primary);color:var(--color-primary-dark);font-size:12.5px;font-weight:800;display:inline-flex;align-items:center;letter-spacing:.4px;transition:.2s}
+.langsw:hover{background:var(--color-primary);color:var(--color-primary-reverse)}
+.icon-btn:hover{background:var(--sand-200)}
+.icon-btn .badge{position:absolute;top:4px;inset-inline-start:4px;min-width:17px;height:17px;padding:0 4px;border-radius:999px;background:var(--color-primary);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;line-height:1}
+.burger{display:none}
+.searchwrap{position:relative;flex:none;width:230px}
+.searchwrap input{width:100%;height:42px;border:1px solid var(--line);background:var(--white);border-radius:999px;padding:0 40px 0 16px;font-size:13.5px;color:var(--ink);transition:.2s}
+.searchwrap input:focus{outline:none;border-color:var(--color-primary-light);box-shadow:0 0 0 3px rgba(126,89,38,.12)}
+.searchwrap .s-ico{position:absolute;inset-inline-start:13px;top:11px;color:var(--taupe);pointer-events:none}
+.suggest{position:absolute;top:48px;inset-inline:0;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-md);overflow:hidden;display:none;z-index:60}
+.suggest.open{display:block}
+.suggest button{display:flex;width:100%;align-items:center;gap:10px;padding:10px 14px;font-size:13.5px;text-align:start;transition:.15s}
+.suggest button:hover{background:var(--sand-100)}
+.suggest button svg{color:var(--taupe);flex:none}
+.suggest .none{padding:12px 14px;color:var(--ink-soft);font-size:13px}
+
+
+.home-banner{padding:16px 0 0}
+.home-banner a{display:block;position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md)}
+.home-banner img{width:100%;height:clamp(230px,42vw,540px);object-fit:cover;object-position:62% 50%;transition:transform 1.2s ease}
+.home-banner a:hover img{transform:scale(1.025)}
+
+
+.marquee{margin-top:34px;background:var(--color-primary);color:var(--color-primary-reverse);overflow:hidden;padding:13px 0;position:relative}
+.marquee-track{display:flex;gap:0;width:max-content;animation:mq 26s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{display:inline-flex;align-items:center;gap:12px;padding:0 26px;font-size:13.5px;font-weight:700;white-space:nowrap}
+.marquee-track span i{font-style:normal;color:var(--sand-300)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(50%)}}
+
+
+section{padding:64px 0}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:30px}
+.sec-head h2{font-size:clamp(22px,2.6vw,30px);font-weight:700;color:var(--color-primary-dark)}
+.sec-head p{color:var(--ink-soft);font-size:14px;margin-top:4px}
+.sec-head .link{display:inline-flex;align-items:center;gap:6px;color:var(--color-primary);font-weight:700;font-size:14px;white-space:nowrap;padding-bottom:4px;border-bottom:2px solid transparent;transition:.2s}
+.sec-head .link:hover{border-color:var(--color-primary)}
+
+
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:3/3.4;box-shadow:var(--shadow-sm);transition:.3s;display:block}
+.cat img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.cat:hover img{transform:scale(1.06)}
+.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(32,14,0,.72),rgba(32,14,0,.06) 55%)}
+.cat .info{position:absolute;bottom:0;inset-inline:0;padding:18px;z-index:2;color:#fff}
+.cat .info b{display:block;font-size:17px;font-weight:700}
+.cat .info small{font-size:12px;opacity:.85}
+.cat .go{position:absolute;top:14px;inset-inline-start:14px;z-index:2;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;color:var(--color-primary-dark);opacity:0;transform:translateY(-6px);transition:.25s}
+.cat:hover .go{opacity:1;transform:none}
+
+
+.pcard{background:#fff;border:2px solid var(--card-outline);border-radius:.5rem;overflow:hidden;display:flex;flex-direction:column;position:relative;transition:box-shadow .3s cubic-bezier(.4,0,.2,1)}
+.pcard:hover{box-shadow:0 8px 22px rgba(50,13,0,.13)}
+.pcard .ph{position:relative;aspect-ratio:1/1;overflow:hidden;background:#f3f4f6}
+.pcard .ph img{width:100%;height:100%;object-fit:cover}
+.pcard .ph::after{content:"";position:absolute;top:-50%;left:-75%;width:50%;height:200%;background:linear-gradient(120deg,transparent,hsla(0,0%,100%,.1) 35%,hsla(0,0%,100%,.35) 50%,hsla(0,0%,100%,.1) 65%,transparent);transform:skewX(-20deg);opacity:0;pointer-events:none}
+.pcard:hover .ph::after{animation:angelShine .9s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes angelShine{from{left:-75%;opacity:1}to{left:125%;opacity:1}}
+.pcard .promo{position:absolute;top:1rem;left:0;background:var(--color-primary);color:#fff;font-size:12px;font-weight:700;padding:.375rem .625rem;border-radius:0 .25rem .25rem 0;max-width:calc(100% - 60px);z-index:2}
+.pcard .disc{position:absolute;top:0;left:.5rem;width:2rem;background:#ef4444;color:#fff;font-size:.75rem;font-weight:700;display:flex;flex-direction:column;align-items:center;line-height:1.05;padding:.4rem 0 .5rem;border-radius:0 0 .45rem .45rem;z-index:2}
+.pcard .disc small{font-size:9px;font-weight:400}
+.pcard .acts{position:absolute;bottom:.25rem;right:.25rem;display:flex;flex-direction:column;gap:.25rem;z-index:2}
+.pcard .acts button{width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid var(--line);color:#6b7280;display:grid;place-items:center;opacity:.92;box-shadow:var(--shadow-sm);transition:.2s}
+.pcard .acts button:hover{color:var(--color-primary);border-color:var(--color-primary)}
+.pcard .acts .wish.on{background:#ef4444;border-color:#dc2626;color:#fff}
+.pcard .acts .wish.on svg{fill:#fff}
+.pcard .acts .qv{opacity:0;transform:translateY(6px)}
+.pcard:hover .acts .qv,.pcard:focus-within .acts .qv{opacity:.92;transform:none}
+.pcard .body{padding:1.25rem;display:flex;flex-direction:column;flex:1;text-align:center}
+.pcard .name{font-size:.875rem;line-height:1.25rem;font-weight:400;color:var(--ink);margin-bottom:.625rem;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.pcard .sub{display:flex;justify-content:center;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.pcard .price{font-size:.875rem;line-height:1.25rem;font-weight:700;color:var(--ink)}
+.pcard .price-before{color:#9ca3af;text-decoration:line-through;font-size:.8rem}
+.pcard .foot{margin-top:auto}
+.pcard .add-btn{width:100%;height:40px;border:1px solid var(--color-primary);border-radius:.5rem;color:var(--color-primary);background:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+.pcard .add-btn:hover{background:var(--color-primary);color:var(--color-primary-reverse)}
+.pcard .add-btn.added{background:var(--ok);border-color:var(--ok);color:#fff}
+
+.carousel-outer{position:relative}
+.cards{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 22px;scrollbar-width:none}
+.cards::-webkit-scrollbar{display:none}
+.cards .pcard{flex:0 0 286px;scroll-snap-align:start}
+.car-btn{position:absolute;top:38%;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-md);display:grid;place-items:center;color:var(--color-primary-dark);z-index:4;transition:.2s}
+.car-btn:hover{background:var(--color-primary);color:#fff}
+.car-btn.prev{inset-inline-end:-10px}
+.car-btn.next{inset-inline-start:-10px}
+.car-btn[disabled]{opacity:.35;pointer-events:none}
+.search-note{display:none;align-items:center;gap:10px;background:var(--sand-200);border:1px dashed var(--sand-300);border-radius:12px;padding:10px 16px;font-size:13px;margin-bottom:14px}
+.search-note.on{display:flex}
+.search-note button{color:var(--color-primary);font-weight:700;font-size:12.5px;text-decoration:underline}
+
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+
+
+.craft-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center}
+.craft-grid .img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);aspect-ratio:1/1}
+.craft-grid .img img{width:100%;height:100%;object-fit:cover}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--sand-200);color:var(--color-primary);border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700;margin-bottom:16px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--color-primary);display:inline-block}
+.steps{counter-reset:st;display:grid;gap:18px;margin-top:24px}
+.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;transition:.2s}
+.step:hover{box-shadow:var(--shadow-sm);border-color:var(--sand-300)}
+.step .n{counter-increment:st;flex:none;width:42px;height:42px;border-radius:12px;background:var(--sand-200);color:var(--color-primary);display:grid;place-items:center;font-weight:700;font-size:17px}
+.step .n::before{content:counter(st)}
+.step b{display:block;font-size:15px;color:var(--color-primary-dark)}
+.step p{font-size:13px;color:var(--ink-soft);margin-top:2px}
+
+
+.testi{background:var(--color-primary-dark);color:#fff;position:relative;overflow:hidden}
+.testi .sec-head h2{color:var(--color-primary-reverse)}
+.testi .sec-head p{color:rgba(255,255,204,.65)}
+.tslider{position:relative}
+.ttrack{display:flex;transition:transform .55s cubic-bezier(.22,.8,.3,1)}
+.tslide{flex:0 0 100%;padding:6px}
+.tcard{max-width:760px;margin-inline:auto;text-align:center;padding:10px 20px 6px}
+.tcard .stars{display:flex;justify-content:center;gap:4px;color:#F4C64D;margin-bottom:16px}
+.tcard q{font-size:clamp(18px,2.4vw,25px);font-weight:700;line-height:1.8;quotes:"«" "»";color:#fff}
+.tcard .who{margin-top:18px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:13.5px;color:rgba(255,255,204,.85)}
+.tcard .who i{width:38px;height:38px;border-radius:50%;background:var(--color-primary-light);display:grid;place-items:center;font-style:normal;font-weight:700;color:#fff;font-size:15px}
+.tnav{display:flex;justify-content:center;gap:10px;margin-top:26px}
+.tdot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.3);transition:.2s}
+.tdot.on{background:var(--color-primary-reverse);width:26px;border-radius:999px}
+.tarrow{position:absolute;top:40%;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center;transition:.2s;z-index:3}
+.tarrow:hover{background:var(--color-primary)}
+.tarrow.prev{inset-inline-start:0}
+.tarrow.next{inset-inline-end:0}
+.testi .src{margin-top:18px;text-align:center;font-size:11.5px;color:rgba(255,255,255,.4)}
+
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gitem{border-radius:16px;overflow:hidden;cursor:zoom-in;position:relative;aspect-ratio:1/1;box-shadow:var(--shadow-sm)}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gitem:hover img{transform:scale(1.06)}
+.gitem figcaption{position:absolute;bottom:0;inset-inline:0;background:linear-gradient(to top,rgba(32,14,0,.7),transparent);color:#fff;font-size:12px;padding:22px 12px 10px;opacity:0;transition:.25s}
+.gitem:hover figcaption{opacity:1}
+
+
+.faq{max-width:820px;margin-inline:auto;display:grid;gap:12px}
+.qa{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s}
+.qa.open{border-color:var(--sand-300);box-shadow:var(--shadow-sm)}
+.qa button.q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 20px;font-size:15px;font-weight:700;color:var(--color-primary-dark);text-align:start}
+.qa .q svg{flex:none;transition:transform .3s;color:var(--color-primary)}
+.qa.open .q svg{transform:rotate(45deg)}
+.qa .a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.qa .a p{padding:0 20px 18px;font-size:13.5px;color:var(--ink-soft)}
+.qa .a a{color:var(--color-primary);font-weight:700;text-decoration:underline}
+
+
+
+.faq details{background:#fff;border:1.5px solid var(--sand-200);border-radius:16px;overflow:hidden;transition:border-color .25s,box-shadow .25s}
+.faq details[open]{border-color:var(--color-primary);box-shadow:var(--shadow-sm)}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:16px 20px;font-size:14.5px;font-weight:800;color:var(--color-primary-dark);line-height:1.7}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'Q';flex:none;width:30px;height:30px;border-radius:10px;background:var(--sand-100);color:var(--color-primary);display:grid;place-items:center;font-size:13px;font-weight:800}
+.faq summary::after{content:'+';margin-inline-start:auto;flex:none;width:26px;height:26px;border-radius:50%;background:var(--sand-100);color:var(--color-primary);display:grid;place-items:center;font-size:18px;font-weight:800;transition:transform .25s,background .25s,color .25s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--color-primary);color:#fff}
+.faq details[open] summary::before{background:var(--color-primary);color:#fff}
+.faq details p{margin:0;padding:14px 20px 18px 62px;border-top:1px dashed var(--sand-200);font-size:13.5px;color:var(--ink-soft);line-height:2.1}
+@media (max-width:600px){.faq details p{padding:12px 18px 16px}}
+
+
+.recent{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+.recent::-webkit-scrollbar{display:none}
+.ritem{flex:0 0 170px;background:#fff;border:1px solid var(--card-outline);border-radius:.5rem;overflow:hidden;cursor:pointer;transition:.2s;text-align:center}
+.ritem:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.ritem img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.ritem .t{padding:9px 11px 11px}
+.ritem b{font-size:12px;display:block;line-height:1.5;min-height:36px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ritem span{font-size:12px;font-weight:700;color:var(--color-primary-dark)}
+
+
+.news{background:var(--sand-200);border-block:1px solid var(--line)}
+.news-in{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.news h2{font-size:clamp(20px,2.4vw,27px);color:var(--color-primary-dark);font-weight:700}
+.news p{color:var(--ink-soft);font-size:14px;margin-top:8px}
+.news form{display:flex;gap:10px;background:#fff;padding:8px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.news input{flex:1;border:none;background:none;height:46px;padding:0 18px;font-size:14px}
+.news input:focus{outline:none}
+.news .msg{font-size:12.5px;margin-top:10px;display:none}
+.news .msg.ok{display:block;color:var(--ok)}
+.news .msg.err{display:block;color:var(--danger)}
+
+
+footer{background:var(--color-primary-dark);color:rgba(255,255,255,.82);padding:56px 0 0;font-size:13.5px}
+.f-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:34px;padding-bottom:40px}
+.f-grid h4{color:#fff;font-size:15px;margin-bottom:16px;font-weight:700}
+.f-grid a{display:block;padding:5px 0;color:rgba(255,255,255,.72);transition:.2s}
+.f-grid a:hover{color:var(--color-primary-reverse);padding-inline-start:6px}
+.f-about p{margin:14px 0;line-height:1.9;color:rgba(255,255,255,.65)}
+.f-logo{display:flex;align-items:center;gap:10px}
+.f-logo img{height:40px;filter:brightness(0) invert(1);opacity:.95}
+.f-logo b{color:#fff;font-size:19px}
+.pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.pay span{border:1px solid rgba(255,255,255,.22);border-radius:8px;padding:5px 12px;font-size:11.5px;font-weight:700;color:rgba(255,255,255,.85);background:rgba(255,255,255,.05)}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.5)}
+
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:50px;padding:0 26px;border-radius:999px;font-weight:700;font-size:15px;transition:.22s;border:1.5px solid transparent}
+.btn-primary{background:var(--color-primary);color:#fff;box-shadow:0 8px 20px rgba(88,51,0,.25)}
+.btn-primary:hover{background:var(--color-primary-dark);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--color-primary);color:var(--color-primary)}
+.btn-ghost:hover{background:var(--sand-200)}
+.btn-sm{height:42px;padding:0 18px;font-size:13.5px}
+
+
+.qview{position:fixed;inset:0;z-index:140;background:rgba(20,10,2,.55);display:none;align-items:center;justify-content:center;padding:4vh 4vw}
+.qview.open{display:flex}
+.qv-box{position:relative;background:#fff;border-radius:22px;max-width:840px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;box-shadow:var(--shadow-lg);max-height:92vh}
+.qv-img{position:relative;background:var(--sand-100)}
+.qv-img img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.qv-img .flag{position:absolute;top:14px;inset-inline-start:14px;background:var(--color-primary);color:#fff;font-size:11px;font-weight:700;padding:5px 11px;border-radius:.25rem}
+.qv-img .flag.alt{background:var(--color-primary-dark)}
+.qv-img .flag.disc{background:#B3402A}
+.qv-info{padding:26px 26px 22px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}
+.qv-info .x{position:absolute;top:14px;inset-inline-end:14px;width:38px;height:38px;border-radius:50%;background:#fff;box-shadow:var(--shadow-sm);display:grid;place-items:center;color:var(--ink-soft);z-index:3}
+.qv-info .x:hover{background:var(--sand-100)}
+.qv-meta{font-size:11.5px;color:var(--color-primary);font-weight:700;background:var(--sand-200);border-radius:999px;padding:4px 12px;align-self:flex-start}
+.qv-info h3{font-size:20px;font-weight:700;color:var(--color-primary-dark);line-height:1.5}
+.qv-stars{color:#F4C64D;font-size:14px;letter-spacing:2px}
+.qv-stars small{color:var(--ink-soft);font-size:11px;letter-spacing:0;margin-inline-start:6px}
+.qv-price{display:flex;align-items:baseline;gap:10px}
+.qv-price b{font-size:24px;color:var(--color-primary-dark)}
+.qv-price s{color:var(--ink-soft);font-size:14px}
+.qv-price .d{background:#B3402A;color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:3px 10px}
+.qv-bullets{list-style:none;display:grid;gap:7px;font-size:13px;color:var(--ink-soft)}
+.qv-bullets li{display:flex;gap:8px;align-items:center}
+.qv-bullets svg{color:var(--ok);flex:none}
+.qv-colors{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-soft)}
+.qv-colors i{width:18px;height:18px;border-radius:50%;box-shadow:0 0 0 1px rgba(0,0,0,.12) inset}
+.qv-row{display:flex;gap:10px;align-items:center;margin-top:4px}
+.qv-row .btn{flex:1}
+.qv-link{font-size:12.5px;color:var(--color-primary);font-weight:700;text-decoration:underline;margin-top:2px}
+
+
+.scrim{position:fixed;inset:0;background:rgba(20,10,2,.5);z-index:120;opacity:0;pointer-events:none;transition:.3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-start:-420px;width:min(400px,92vw);background:#fff;z-index:130;box-shadow:var(--shadow-lg);transition:inset-inline-start .38s cubic-bezier(.22,.8,.3,1);display:flex;flex-direction:column}
+.drawer.open{inset-inline-start:0}
+.drawer header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+.drawer header b{font-size:16px;color:var(--color-primary-dark)}
+.drawer .x{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:var(--ink-soft)}
+.drawer .x:hover{background:var(--sand-100)}
+.drawer .content{flex:1;overflow-y:auto;padding:16px 20px}
+.cart-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.cart-item img{width:64px;height:64px;border-radius:10px;object-fit:cover;flex:none}
+.cart-item .t{flex:1}
+.cart-item .t b{font-size:13px;display:block;line-height:1.5}
+.cart-item .t small{color:var(--ink-soft);font-size:11.5px}
+.qty{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line);border-radius:999px;margin-top:6px}
+.qty button{width:26px;height:26px;display:grid;place-items:center;color:var(--color-primary-dark);font-weight:700}
+.qty span{min-width:22px;text-align:center;font-size:12.5px;font-weight:700}
+.cart-item .p{font-weight:700;color:var(--color-primary-dark);font-size:13.5px;white-space:nowrap}
+.cart-item .rm{color:var(--danger);font-size:11px;margin-top:6px;display:inline-block}
+.cart-empty{text-align:center;color:var(--ink-soft);padding:50px 10px;font-size:13.5px}
+.cart-empty svg{margin:0 auto 12px;color:var(--sand-300)}
+.ship-bar{margin:14px 20px 0;background:var(--sand-100);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:12px}
+.ship-bar .bar{height:7px;background:var(--sand-300);border-radius:99px;margin-top:8px;overflow:hidden}
+.ship-bar .bar i{display:block;height:100%;width:0;background:var(--color-primary);border-radius:99px;transition:width .4s}
+.ship-bar.done{background:#EAF6EE;border-color:#BFE3CC}
+.ship-bar.done .bar i{background:var(--ok)}
+.drawer footer{padding:16px 20px;border-top:1px solid var(--line);background:var(--sand-50)}
+.drawer footer .tr{display:flex;justify-content:space-between;font-weight:700;color:var(--color-primary-dark);font-size:15px;margin-bottom:12px}
+.drawer footer .btn{width:100%}
+.mnav a{display:block;padding:13px 4px;border-bottom:1px solid var(--line);font-size:15px;font-weight:700;color:var(--color-primary-dark)}
+.mnav .searchwrap{width:100%;margin:14px 0}
+.toast{position:fixed;bottom:24px;inset-inline-start:50%;transform:translate(50%,80px);background:var(--color-primary-dark);color:var(--color-primary-reverse);padding:12px 22px;border-radius:999px;font-size:13.5px;font-weight:700;z-index:160;box-shadow:var(--shadow-lg);transition:transform .35s cubic-bezier(.22,.8,.3,1);display:flex;align-items:center;gap:9px}
+.toast.on{transform:translate(50%,0)}
+.top-btn{position:fixed;bottom:22px;inset-inline-end:22px;width:46px;height:46px;border-radius:50%;background:var(--color-primary);color:#fff;display:grid;place-items:center;box-shadow:var(--shadow-md);z-index:100;opacity:0;pointer-events:none;transition:.3s}
+.top-btn.on{opacity:1;pointer-events:auto}
+.top-btn:hover{background:var(--color-primary-dark)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+
+.cat-banner{position:relative;display:block;border-radius:var(--radius-lg);overflow:hidden;height:clamp(230px,42vw,540px);margin-bottom:18px;box-shadow:var(--shadow-sm)}
+.cat-banner img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.cat-banner:hover img{transform:scale(1.045)}
+.cb-go{position:absolute;bottom:16px;inset-inline-end:18px;width:40px;height:40px;border-radius:50%;background:rgba(255,252,247,.94);color:var(--color-primary-dark);display:grid;place-items:center;z-index:1;transition:.2s}
+.cat-banner:hover .cb-go{background:var(--color-primary);color:var(--color-primary-reverse)}
+.csw{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);transition:.15s}
+.csw.on{box-shadow:0 0 0 2px var(--color-primary)}
+.bsnote{margin:0 0 12px;font-size:12.5px;font-weight:700;color:var(--color-primary-dark);background:var(--color-primary-reverse);border:1px solid var(--sand-300);padding:8px 14px;border-radius:999px;display:inline-block}
+.pays{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px;justify-content:center}
+.pays span{font-size:10.5px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--ink-soft);background:var(--sand-50)}
+.mono-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px;box-shadow:var(--shadow-sm)}
+.mono-preview{display:grid;place-items:center;gap:16px;background:var(--sand-100);border-radius:16px;padding:30px 16px 22px}
+.tote-real{position:relative;width:min(330px,100%);aspect-ratio:1/1}
+.tote-real img{width:100%;height:100%;object-fit:cover;border-radius:14px;box-shadow:0 14px 30px rgba(50,13,0,.16)}
+.print-zone{position:absolute;transform:translate(-50%,-50%);border:1.5px dashed rgba(88,51,0,.5);border-radius:6px;display:grid;place-items:center;background:rgba(255,255,255,.28);backdrop-filter:blur(1px)}
+.mono-print{max-width:94%;text-align:center;font-family:var(--serif);font-weight:700;font-size:26px;line-height:1.15;letter-spacing:1px;color:#2B2724;word-break:break-word;pointer-events:none}
+.mono-print.ar{font-family:'PingARLT',serif;letter-spacing:0;font-size:19px;line-height:1.3}
+.tote-real{width:min(420px,100%)}
+.mono-grid h2{font-size:clamp(20px,2.4vw,27px);color:var(--color-primary-dark);font-weight:700;margin-bottom:8px}
+.mono-grid p{color:var(--ink-soft);font-size:14px;margin-bottom:16px}
+.mono-grid input{width:100%;height:46px;border:1px solid var(--line);border-radius:12px;padding:0 14px;font-size:15px;background:var(--sand-50);margin-bottom:12px}
+.mono-grid input:focus{outline:none;border-color:var(--color-primary-light);box-shadow:0 0 0 3px rgba(126,89,38,.12)}
+.mono-grid .swatches{display:flex;gap:8px;align-items:center;margin-bottom:16px}
+.mono-grid .swatches span{font-size:12px;color:var(--ink-soft)}
+@media (max-width:1080px){.mono-grid{grid-template-columns:1fr}}
+
+
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px}
+.hside{display:flex;align-items:center;gap:4px;flex:1}
+.hside.end{justify-content:flex-end}
+.hlogo{display:grid;place-items:center}
+.hlogo img{height:40px;width:auto}
+.searchrow{display:none;border-top:1px solid var(--line);background:#fff;padding:10px 0}
+.searchrow.open{display:block}
+.srwrap{position:relative}
+.srwrap input{width:100%;height:44px;border:1px solid var(--line);border-radius:12px;padding:0 14px;font-size:14px;background:var(--sand-50)}
+.srwrap input:focus{outline:none;border-color:var(--color-primary-light);box-shadow:0 0 0 3px rgba(126,89,38,.12)}
+.f-mid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px;padding:40px 12px}
+.f-profile img{height:40px;width:auto;margin-bottom:12px}
+.f-profile p{font-size:12.5px;color:var(--ink-soft);line-height:1.9}
+.f-title{font-size:14px;font-weight:800;color:var(--color-primary-dark);margin-bottom:12px}
+.f-list{display:grid;gap:9px}
+.f-list a,.f-list span{font-size:12.5px;color:var(--ink-soft)}
+.f-list a:hover{color:var(--color-primary)}
+.f-bot{border-top:1px solid var(--line);background:#fff}
+.f-bot-in{display:flex;justify-content:space-between;gap:10px;padding:14px 12px;font-size:12px;color:var(--ink-soft);flex-wrap:wrap}
+@media (max-width:1080px){.f-mid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.f-mid{grid-template-columns:1fr}}
+
+
+.story-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-sm)}
+.story-card h2{font-size:clamp(20px,2.4vw,27px);color:var(--color-primary-dark);font-weight:700;margin-bottom:10px}
+.story-card>p{color:var(--ink-soft);font-size:14.5px;line-height:2;margin-bottom:20px;max-width:70ch}
+.story-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.story-points div{background:var(--sand-100);border:1px solid var(--sand-200);border-radius:12px;padding:14px}
+.story-points b{display:block;font-size:14px;color:var(--color-primary-dark);margin-bottom:4px}
+.story-points small{font-size:12px;color:var(--ink-soft);line-height:1.8}
+.vids{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}
+.vids::-webkit-scrollbar{display:none}
+.vid{flex:0 0 clamp(150px,21vw,205px);scroll-snap-align:start;position:relative;aspect-ratio:9/16;border:0;padding:0;border-radius:14px;overflow:hidden;background:#000;cursor:pointer;box-shadow:var(--shadow-sm)}
+.vid img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.vid:hover img{transform:scale(1.05)}
+.vplay{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(transparent 55%,rgba(0,0,0,.55))}
+.vplay svg{width:46px;height:46px;fill:rgba(255,255,255,.95);filter:drop-shadow(0 2px 10px rgba(0,0,0,.55));transition:transform .25s}
+.vid:hover .vplay svg{transform:scale(1.12)}
+.vid-t{position:absolute;bottom:0;left:0;right:0;color:#fff;font-size:11px;font-weight:700;padding:20px 8px 8px;text-align:center;pointer-events:none}
+.vlight{position:fixed;inset:0;z-index:95;background:rgba(24,10,0,.82);display:grid;place-items:center;padding:22px;backdrop-filter:blur(3px)}
+.vlight[hidden]{display:none}
+.vl-box{position:relative;width:min(400px,92vw);aspect-ratio:9/16}
+.vl-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:16px;box-shadow:0 18px 60px rgba(0,0,0,.5)}
+#vlClose{position:absolute;top:-44px;inset-inline-end:0;width:34px;height:34px;border:0;border-radius:50%;background:#fff;color:#33200b;cursor:pointer;display:grid;place-items:center}
+.vids-nav{display:flex;gap:8px}
+.vids-nav button{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--color-primary);background:#fff;color:var(--color-primary);cursor:pointer;display:grid;place-items:center;transition:.2s}
+.vids-nav button:hover{background:var(--color-primary);color:#fff}
+@media (max-width:900px){.story-points{grid-template-columns:1fr}.vids{grid-template-columns:repeat(2,1fr)}}
+
+
+@media (max-width:1080px){
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .pgrid{grid-template-columns:repeat(3,1fr)}
+  .craft-grid{grid-template-columns:1fr;gap:30px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .news-in{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .searchwrap.desk{display:none}
+  .burger{display:grid}
+  section{padding:46px 0}
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .qv-box{grid-template-columns:1fr;overflow-y:auto}
+  .qv-img img{min-height:230px}
+  .cards .pcard{flex-basis:210px}
+  .car-btn{display:none}
+  .tarrow{display:none}
+  .home-banner img{object-position:80% 50%}
+}
+@media (max-width:520px){
+  .cats{grid-template-columns:1fr 1fr;gap:12px}
+  .cat{aspect-ratio:3/3.8}
+  .f-grid{grid-template-columns:1fr}
+  .gallery{gap:10px}
+}
+
+/* ---- LTR mirrors (en.html only) ---- */
+[dir=ltr] .pcard .acts{right:auto;left:.25rem}
+[dir=ltr] .pcard .promo{left:auto;right:0;border-radius:.25rem 0 0 .25rem}
+[dir=ltr] .pcard .disc{left:auto;right:.5rem}
+[dir=ltr] .toast{transform:translate(-50%,80px)}
+[dir=ltr] .toast.on{transform:translate(-50%,0)}
+[dir=ltr] .marquee-track{animation-direction:reverse}
+[dir=ltr] .home-banner img{object-position:38% 50%}
+[dir=ltr] .tote::before{inset-inline-start:22px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+
+<div class="announce" role="region" aria-label="Store offers">
+  <div class="msg on"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Free shipping for orders over <b>405 SAR</b></span></div>
+  <div class="msg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span>Handmade within <b>3 days</b> only</span></div>
+  <div class="msg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg><span>Split your order easily with <b>Tabby & Tamara</b></span></div>
+</div>
+
+
+<header id="top">
+  <div class="hrow container">
+    <div class="hside">
+      <button class="icon-btn burger" id="burger" aria-label="Menu"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <button class="icon-btn" id="searchBtn" aria-label="Search"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    </div>
+    <a class="hlogo" href="https://decentstore20.com/ar" target="_blank" rel="noopener" aria-label="Decent"><img src="assets/logo.png" alt="Decent"><h1 class="sr-only">Personalized name bags from the best bag store | Shop now</h1></a>
+    <div class="hside end">
+      <a class="langsw" href="index.html" lang="ar" hreflang="ar"><span>Language:</span> العربية</a>
+      <a class="icon-btn" href="https://decentstore20.com/ar" target="_blank" rel="noopener" aria-label="Login"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5"/></svg></a>
+
+      <button class="icon-btn" id="cartBtn" aria-label="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l1.5 13h-15L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="badge" id="cartCount" hidden>0</span></button>
+    </div>
+  </div>
+  <div class="searchrow" id="searchRow"><div class="container srwrap">
+    <input id="search" type="search" placeholder="Search for a bag, a set, a card holder…" autocomplete="off" aria-label="Search the store">
+    <div class="suggest" id="suggest"></div>
+  </div></div>
+
+</header>
+
+<main id="main">
+
+<div class="home-banner">
+  <div class="container">
+    <h1 class="sr-only">Personalized name bags from Saudi Arabia's best bag store | Decent</h1>
+    <a href="https://decentstore20.com/en/Nava-bags/c480246151" target="_blank" rel="noopener" aria-label="Shop the Nava Bags collection">
+      <img src="assets/banner-en.jpg" alt="Your Bag. Your Name. — The Nava tote & monogram travel collection by Decent">
+    </a>
+  </div>
+</div>
+
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq">
+    <span>100% handmade <i>✦</i></span><span>Ready in 3 days <i>✦</i></span><span>Free shipping over SAR 405 <i>✦</i></span><span>Installments with Tabby & Tamara <i>✦</i></span><span>Name customization or initials <i>✦</i></span><span>Durable canvas & selected materials <i>✦</i></span>
+  </div>
+</div>
+
+
+<section id="cats">
+  <div class="container">
+    <div class="sec-head rv">
+      <div><h2>Shop by category</h2><p>271 A real product awaiting your customization</p></div>
+      <a class="link" href="#shop">All products
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    </div>
+    <div class="cats">
+      <a class="cat rv" href="https://decentstore20.com/en/Nava-bags/c480246151" target="_blank" rel="noopener"><img src="assets/ban3.webp" alt="Nava Bags"><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span><span class="info"><b>Nava Bags</b><small>18 products</small></span></a>
+      <a class="cat rv" href="https://decentstore20.com/en/Nava-travel-bags/c476223364" target="_blank" rel="noopener"><img src="assets/ban2.webp" alt="Nava Travel Bags"><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span><span class="info"><b>Nava Travel Bags</b><small>57 products</small></span></a>
+      <a class="cat rv" href="https://decentstore20.com/en/Packages/c156180837" target="_blank" rel="noopener"><img src="assets/ban4.webp" alt="Packages"><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span><span class="info"><b>Packages</b><small>12 products</small></span></a>
+      <a class="cat rv" href="https://decentstore20.com/en/all-products/c1768309174" target="_blank" rel="noopener"><img src="assets/ban1.webp" alt="All Products"><span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span><span class="info"><b>All Products</b><small>271 products</small></span></a>
+    </div>
+  </div>
+</section>
+
+
+<section id="best" style="padding-top:20px">
+  <div class="container">
+    <div class="sec-head rv">
+      <div><h2>Best Sellers</h2><p>Pieces our customers tried — then ordered again</p></div>
+      <a class="link" href="#cats">View all
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    </div>
+    <div class="search-note" id="searchNote">Search results for: <b id="searchTerm"></b> <button id="clearSearch">Clear search</button></div>
+    <div class="carousel-outer rv">
+      <button class="car-btn next" id="carNext" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button>
+      <button class="car-btn prev" id="carPrev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button>
+      <div class="cards" id="cards"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="story" style="padding-top:26px">
+  <div class="container">
+    <div class="story-card rv">
+      <span class="eyebrow"><i></i> Our Story</span>
+      <h2>From a global idea.. to Saudi-made</h2>
+      <p>Decent was born 4 years ago from a simple observation: the world's most beautiful bags are made from materials we can bring to your hands in the Kingdom — at a fairer price and faster delivery. So we decided to make them here, by hand, piece by piece, with your name on it.</p>
+      <div class="story-points">
+        <div><b>The beginning</b><small>A global idea from the best stores, executed by Saudi hands with the same quality and a fairer price.</small></div>
+        <div><b>The craft</b><small>Durable canvas and selected leathers, hand-stitched, with your name printed on every piece before it ships.</small></div>
+        <div><b>The promise</b><small>3 days to prepare, 3–7 days to your door anywhere in the Kingdom, plus shipping to the Gulf.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="handbags" style="padding-top:26px">
+  <div class="container">
+    <a class="cat-banner rv" href="https://decentstore20.com/en/Nava-bags/c480246151" target="_blank" rel="noopener" aria-label="Shop hand bags with your name">
+      <img src="assets/banner-hands-en.jpg" alt="Hand bags with your name — handmade canvas · free name printing">
+      <span class="cb-go" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>
+    </a>
+    <div class="pgrid rv" id="handGrid"></div>
+  </div>
+</section>
+
+<section id="travelbags" style="padding-top:26px">
+  <div class="container">
+    <a class="cat-banner rv" href="https://decentstore20.com/en/Nava-travel-bags/c476223364" target="_blank" rel="noopener" aria-label="Shop travel bags with your name">
+      <img src="assets/banner-travel-en.jpg" alt="Travel bags with your name — 3-day prep · shipping across the Kingdom">
+      <span class="cb-go" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></span>
+    </a>
+    <div class="pgrid rv" id="travelGrid"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="packages" style="padding-top:26px">
+  <div class="container">
+    <a class="cat-banner rv" href="https://decentstore20.com/en/Packages/c156180837" target="_blank" rel="noopener" aria-label="Shop name packs">
+      <img src="assets/banner-packs-en.jpg" alt="Name packs — travel bag + handbag with your name">
+    </a>
+    <div class="pgrid rv" id="pkgGrid"></div>
+  </div>
+</section>
+
+<section id="mono" style="padding-top:26px">
+  <div class="container">
+    <div class="mono-grid rv">
+      <div class="mono-preview">
+        <figure class="tote-real"><img id="monoImg" src="assets/prod/d1.jpg?v=2" alt="Nava tote with the monogram stripe — print zone at the stripe center">
+          <span class="print-zone" id="pzZone" style="left:51.5%;top:66.5%;width:23.1%;height:11%"><span class="mono-print" id="monoOut2">Nour</span></span></figure>
+        <div class="swatches" role="radiogroup" aria-label="Stripe color">
+          <span>Stripe color:</span>
+          <button class="csw on" data-img="assets/prod/d1.jpg?v=2" data-pz="51.5,66.5,23.1,11.0" style="background:#8a5a2a" title="Design 1" aria-label="Design 1"></button>
+          <button class="csw" data-img="assets/prod/d2.jpg?v=2" data-pz="52.1,66.1,23.1,10.2" style="background:#6b7231" title="Design 2" aria-label="Design 2"></button>
+          <button class="csw" data-img="assets/prod/d3.jpg?v=2" data-pz="51.4,65.2,23.1,10.6" style="background:#f19fb4" title="Design 3" aria-label="Design 3"></button>
+          <button class="csw" data-img="assets/prod/d7.jpg?v=2" data-pz="52.1,65.2,23.1,10.6" style="background:#c08a3e" title="Design 7" aria-label="Design 7"></button>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow"><i></i> Try before you order</span>
+        <h2>Type your name.. see it on the bag</h2>
+        <p>Same as our real printing: your name or initials get printed on the free space of the monogram stripe — in Arabic or English, inside the print zone.</p>
+        <input id="monoIn2" type="text" maxlength="24" placeholder="Example: Nour or Nora Ali" value="Nour" aria-label="Your name for preview">
+        <a class="btn btn-primary btn-sm" href="#handbags">Shop your model now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="craft">
+  <div class="container craft-grid">
+    <div class="img rv"><img src="assets/ban3.webp" alt="Nava canvas tote with A.A initials — handmade"></div>
+    <div class="rv">
+      <span class="eyebrow"><i></i> From our workshop to your door</span>
+      <h2 style="font-size:clamp(22px,2.6vw,30px);color:var(--color-primary-dark);font-weight:700">Every bag passes through our hands, piece by piece</h2>
+      <div class="steps">
+        <div class="step"><span class="n"></span><div><b>Choose the model & color</b><p>Nava, travel, sets or accessories — in beige, black, grey and brown.</p></div></div>
+        <div class="step"><span class="n"></span><div><b>Type your name or initials</b><p>in Arabic or English, printed on the bag's signature stripe.</p></div></div>
+        <div class="step"><span class="n"></span><div><b>We stitch & prepare it within 3 days</b><p>Durable canvas and hand stitching, then shipped to you — free over SAR 405.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testi" id="testi">
+  <div class="container">
+    <div class="sec-head rv" style="justify-content:center;text-align:center;display:block">
+      <h2>What they say about Decent</h2>
+      <p>Real reviews published on the current store</p>
+    </div>
+    <div class="tslider rv">
+      <button class="tarrow next" id="tNext" aria-label="Next review"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button>
+      <button class="tarrow prev" id="tPrev" aria-label="Previous review"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button>
+      <div class="ttrack" id="tTrack">
+        <div class="tslide"><div class="tcard">
+          <div class="stars">★★★★★</div><q>It was wonderful and done in no time — may God bless you ♥️</q>
+          <div class="who"><i>F</i> Faizah Al-Otaibi · Verified customer</div>
+        </div></div>
+        <div class="tslide"><div class="tcard">
+          <div class="stars">★★★★★</div><q>It arrived beautiful and the material is so lovely</q>
+          <div class="who"><i>T</i> Taghreed Al-Abdulhadi · Verified customer</div>
+        </div></div>
+        <div class="tslide"><div class="tcard">
+          <div class="stars">★★★★★</div><q>Absolutely great and the quality is amazing😍😍</q>
+          <div class="who"><i>S</i> Shadia A. · Verified customer</div>
+        </div></div>
+        <div class="tslide"><div class="tcard">
+          <div class="stars">★★★★★</div><q>Great quality, fair price and fast delivery</q>
+          <div class="who"><i>B</i> Baina Saeed Mohammed Masoud · Verified customer</div>
+        </div></div>
+      </div>
+      <div class="tnav" id="tDots"></div>
+      <div class="src">Source: the reviews widget live on decentstore20.com</div>
+    </div>
+  </div>
+</section>
+
+
+<section id="videos">
+  <div class="container">
+    <div class="sec-head rv"><div><h2>See the bags on video</h2><p>Product videos from Decent’s official YouTube channel</p></div>
+      <div class="vids-nav"><button id="vidPrev" aria-label="Previous"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg></button><button id="vidNext" aria-label="Next"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 6-6 6 6 6"/></svg></button></div></div>
+    <div class="vids rv" id="vidGrid"></div>
+    <div class="vlight" id="vlight" hidden><div class="vl-box"><button id="vlClose" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></button><iframe id="vlFrame" title="Decent product video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
+  </div>
+</section>
+
+
+<section id="faq" style="padding-top:20px">
+  <div class="container">
+    <div class="sec-head rv"><div><h2>FAQ</h2><p>Everything you need to know about the store and products</p></div></div>
+    <div class="faq rv">
+      <details><summary>What is Decent and what does it offer?</summary><p>Decent is a Saudi brand specializing in women’s handbags and travel bags printed with your name or initials. We have served customers across the Kingdom for 4 years, and we offer ready packs that combine a travel bag and a handbag with your name.</p></details>
+      <details><summary>How do I personalize my name on a bag?</summary><p>Choose the bag, size and color, then write the name or letters you want printed — in Arabic or English — printing is free on the signature monogram stripe.</p></details>
+      <details><summary>What sizes are available?</summary><p>Handbags come in several sizes — small and medium are the most requested — and travel bags come in cabin, medium and large sizes with wheels and a handle.</p></details>
+      <details><summary>How long does preparing and shipping my order take?</summary><p>We prepare your order by hand within 3 days, and it reaches you within 3 to 7 days in any city inside the Kingdom. We also ship to the Gulf countries.</p></details>
+      <details><summary>How much is shipping and when is it free?</summary><p>Shipping is free inside the Kingdom for orders above 405 SAR, and the minimum order is 230 SAR.</p></details>
+      <details><summary>Can I pay in installments?</summary><p>Yes — installments are available via Tabby and Tamara at checkout, in addition to Apple Pay, mada, cards, cash on delivery and bank transfer.</p></details>
+      <details><summary>What is the exchange & return policy?</summary><p>The exchange & return policy published on the store’s official policy page applies, noting that name-personalized products are handled as stated there.</p></details>
+    </div>
+  </div>
+</section>
+
+
+<section id="recentSec" style="padding:34px 0 8px" hidden>
+  <div class="container">
+    <div class="sec-head" style="margin-bottom:16px">
+      <div><h2 style="font-size:20px">Recently viewed</h2><p></p></div>
+      <button class="link" id="recentClear" style="border:none;background:none">Clear history</button>
+    </div>
+    <div class="recent" id="recentStrip"></div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+<footer>
+  <div class="container f-mid">
+    <div class="f-profile">
+      <img src="assets/logo.png" alt="Decent">
+      <p>Decent is a luxury Saudi brand combining elegance, exclusivity and prestige through a wide range of personalization options. All our products are handmade from high-quality materials and leathers. Commercial registration no.: 2251496909</p>
+    </div>
+    <div>
+      <p class="f-title">Useful links</p>
+      <div class="f-list">
+        <a href="https://decentstore20.com/en/p/who-are-we" target="_blank" rel="noopener">About Us</a>
+        <a href="https://decentstore20.com/en/p/Replacement-Return+Policy" target="_blank" rel="noopener">Exchange & Return Policy</a>
+        <a href="https://decentstore20.com/en/p/Usage-Agreement" target="_blank" rel="noopener">Terms of Use</a>
+        <a href="https://decentstore20.com/en/p/Privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://decentstore20.com/en/p/common-questions" target="_blank" rel="noopener">FAQ</a>
+        <a href="https://decentstore20.com/ar/blog" target="_blank" rel="noopener">Blog</a>
+        <a href="https://decentstore20.com/en/p/Trade-documentation-document" target="_blank" rel="noopener">E-Commerce Certification Document (Saudi Business Center)</a>
+        <a href="https://decentstore20.com/en/p/Our+branches+-+in+the+Kingdom" target="_blank" rel="noopener">Our Branches in the Kingdom</a>
+      </div>
+    </div>
+    <div>
+      <p class="f-title">Contact us</p>
+      <div class="f-list">
+        <a href="tel:+966557224287" dir="ltr">+966 55 722 4287</a>
+        <a href="mailto:Decent.suup@gmail.com" dir="ltr">Decent.suup@gmail.com</a>
+        <span>Commercial registration: <b dir="ltr">2251496909</b></span>
+      </div>
+    </div>
+    <div>
+      <p class="f-title">Payment methods</p>
+      <div class="pays" style="justify-content:flex-start">
+        <span>Apple Pay</span><span>mada</span><span>Visa</span><span>Mastercard</span><span>Tabby</span><span>Tamara</span><span>Cash on delivery</span><span>Bank transfer</span>
+      </div>
+    </div>
+  </div>
+  <div class="f-bot"><div class="container f-bot-in">
+    <span>© 2026 Decent — All rights reserved</span>
+    <a href="https://salla.com/?utm_source=store&amp;utm_medium=footer&amp;utm_campaign=decent" target="_blank" rel="noreferrer">Salla</a>
+  </div></div>
+</footer>
+
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <header><b>Shopping cart</b><button class="x" id="cartClose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></header>
+  <div class="ship-bar" id="shipBar">
+    <span id="shipTxt">Add SAR 405 worth of items to unlock free shipping 🚚</span>
+    <div class="bar"><i id="shipFill"></i></div>
+  </div>
+  <div class="content" id="cartItems"></div>
+  <footer>
+    <div class="tr"><span>Total</span><span id="cartTotal">0 SAR</span></div>
+    <div class="pays" aria-label="Available payment methods">
+      <span>Apple Pay</span><span>mada</span><span>Visa</span><span>Mastercard</span><span>Tabby</span><span>Tamara</span><span>Cash on delivery</span><span>Bank transfer</span>
+    </div>
+    <button class="btn btn-primary" id="checkout">Checkout</button>
+  </footer>
+</aside>
+
+<aside class="drawer" id="menuDrawer" aria-label="Menu">
+  <header><b>Menu</b><button class="x" id="menuClose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></header>
+  <div class="content">
+    <div class="searchwrap" style="width:100%">
+      <svg class="s-ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="searchM" type="search" placeholder="Search the store…" aria-label="Search">
+    </div>
+          <button class="icon-btn" id="wishBtn" aria-label="Wishlist"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.4 5 6 5c2.2 0 3.6 1.2 4.4 2.4h1.2C12.4 6.2 13.8 5 16 5c3.6 0 5.6 3.6 4 6.7C19.5 16.3 12 21 12 21Z"/></svg><span class="badge" id="wishCount" hidden>0</span></button>
+    <nav class="mnav">
+      <a href="https://decentstore20.com/ar/offers" target="_blank" rel="noopener">Sale</a>
+      <a href="https://decentstore20.com/ar/blog" target="_blank" rel="noopener">Blog</a>
+      <a href="https://decentstore20.com/en/all-products/c1768309174" target="_blank" rel="noopener">All Products</a>
+      <a href="https://decentstore20.com/en/Packages/c156180837" target="_blank" rel="noopener">Packages</a>
+      <a href="https://decentstore20.com/en/Nava-bags/c480246151" target="_blank" rel="noopener">Hand Bags</a>
+      <a href="https://decentstore20.com/en/Nava-travel-bags/c476223364" target="_blank" rel="noopener">Travel Bags</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</aside>
+
+<div class="qview" id="qview" role="dialog" aria-modal="true" aria-label="Product quick view">
+  <div class="qv-box">
+    <div class="qv-img"><img id="qvImg" src="" alt=""><span class="flag" id="qvFlag" hidden></span></div>
+    <div class="qv-info">
+      <button class="x" id="qvClose" aria-label="Close preview"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <span class="qv-meta" id="qvMeta"></span>
+      <h3 id="qvName"></h3>
+      <div class="qv-stars">★★★★★<small>Store customers' reviews</small></div>
+      <div class="qv-price"><b id="qvPrice"></b><s id="qvOld"></s><span class="d" id="qvDisc" hidden></span></div>
+      <ul class="qv-bullets" id="qvBullets"></ul>
+      <div class="qv-colors" id="qvColors"></div>
+      <div class="qv-row">
+        <span class="qty"><button id="qvMinus" aria-label="Decrease quantity">−</button><span id="qvQty">1</span><button id="qvPlus" aria-label="Increase quantity">+</button></span>
+        <button class="btn btn-primary" id="qvAdd">Add to cart</button>
+      </div>
+      <a id="qvLink" class="qv-link" target="_blank" rel="noopener">Open the product page in the store ↗</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="toast" id="toast"></div>
+<button class="top-btn" id="topBtn" aria-label="Back to top"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const fmt=n=>n.toLocaleString('en-US')+' SAR';
+
+
+const REAL_PRODUCTS=["Laili medium bag 25CM (pink) to suit all your needs", "Laili medium bag 25CM (sky blue) to suit all your needs", "Laili mini bag 19cm - sky blue - Laili & Ben bags", "Nava bag size S personalized with your letters - small women handbag", "Nava bag size M personalized with your letters - Nava bag", "Nava bag size L personalized with your letters - beige bag", "Nava small - grey customized bag: letters personalization for elegance!", "Nava medium - grey customized bag: letters personalization for elegance!", "Nava large - grey customized: letters personalization for elegance!", "Milly bag 25CM (black) high quality", "Milly brown bag 25CM (dark brown) high quality", "Kelly leather bag high quality in orange", "Nava small bag - black (letters personalization)", "Nava medium - black handbag (letters personalization)", "Nava large - black (letters personalization)", "Travel bag (S,M,L) (letters personalization)", "Black travel bag (S,M,L) (letters personalization)", "Nava handbags set of two S & M (letters personalization)", "Nava handbags set S, L (letters personalization)", "Nava handbags set of 3 S, M, L (letters personalization)", "Nava bags set of 3 (medium - small) + small travel bag", "Set of 3 travel bags S,M,L personalized for you", "Handbag M + travel bag S set (letters personalization)", "Handbag L + travel bag S set (letters personalization)", "Two handbags S & M + travel bag S set (letters personalization) for elegance & comfort!", "Three handbags S, M, L + travel bag S set (letters personalization)", "Full Nava set 3 handbags + 3 travel bags (letters personalization)"];
+
+(()=>{const msgs=$$('.announce .msg');let i=0;setInterval(()=>{msgs[i].classList.remove('on');i=(i+1)%msgs.length;msgs[i].classList.add('on');},3800);})();
+
+
+const header=$('#header'),topBtn=$('#topBtn');
+addEventListener('scroll',()=>{header.classList.toggle('scrolled',scrollY>8);topBtn.classList.toggle('on',scrollY>600);},{passive:true});
+topBtn.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+
+
+(()=>{const mq=$('#mq');mq.innerHTML+=mq.innerHTML;})();
+
+
+function wireSearch(input,sugg){
+  input.addEventListener('input',()=>{
+    const q=input.value.trim();
+    if(!sugg) return;
+    if(q.length<1){sugg.classList.remove('open');return;}
+    const hits=REAL_PRODUCTS.filter(p=>p.includes(q)).slice(0,7);
+    sugg.innerHTML=hits.length? hits.map(h=>`<button type="button" data-q="${h}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>${h}</button>`).join('') : '<div class="none">No matching results — try "Nava" or "Travel"</div>';
+    sugg.classList.add('open');
+    sugg.querySelectorAll('button').forEach(b=>b.onclick=()=>{input.value=b.dataset.q;applyFilter(b.dataset.q);sugg.classList.remove('open');});
+  });
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){applyFilter(input.value.trim());if(sugg)sugg.classList.remove('open');}});
+}
+let curQuery='';
+function applyFilter(q){
+  curQuery=q;
+  const note=$('#searchNote');
+  if(!q){$$('.pcard').forEach(c=>c.style.display='');note.classList.remove('on');return;}
+  let shown=0;
+  $$('.pcard').forEach(c=>{const hit=c.dataset.name.includes(q);c.style.display=hit?'':'none';if(hit)shown++;});
+  $('#searchTerm').textContent=q;note.classList.add('on');
+  document.getElementById('handbags').scrollIntoView({behavior:'smooth',block:'start'});
+  toast(`offer ${shown} matching result`);
+}
+wireSearch($('#search'),$('#suggest'));
+if($('#searchM'))wireSearch($('#searchM'),null);
+$('#clearSearch').onclick=()=>{$('#search').value='';$('#searchM').value='';applyFilter('');};
+document.addEventListener('click',e=>{if(!e.target.closest('.searchwrap'))$('#suggest').classList.remove('open');});
+
+
+let cart=[];
+const cartDrawer=$('#cartDrawer'),scrim=$('#scrim'),menuDrawer=$('#menuDrawer');
+function openDrawer(d){d.classList.add('open');scrim.classList.add('on');document.body.style.overflow='hidden';}
+function closeDrawers(){[cartDrawer,menuDrawer].forEach(d=>d.classList.remove('open'));scrim.classList.remove('on');document.body.style.overflow='';}
+$('#cartBtn').onclick=()=>openDrawer(cartDrawer);
+$('#cartClose').onclick=closeDrawers;
+$('#burger').onclick=()=>openDrawer(menuDrawer);
+$('#menuClose').onclick=closeDrawers;
+scrim.onclick=closeDrawers;
+function cartRender(){
+  const box=$('#cartItems');
+  const count=cart.reduce((s,i)=>s+i.qty,0);
+  const total=cart.reduce((s,i)=>s+i.qty*i.price,0);
+  $('#cartCount').textContent=count;$('#cartCount').hidden=!count;
+  $('#cartTotal').textContent=fmt(total);
+  
+  const pct=Math.min(100,total/405*100);
+  $('#shipFill').style.width=pct+'%';
+  const bar=$('#shipBar');
+  if(total>=405){bar.classList.add('done');$('#shipTxt').innerHTML='🎉 Congrats! Your order qualifies for free shipping';}
+  else{bar.classList.remove('done');$('#shipTxt').innerHTML=`Add <b>${fmt(405-total)}</b> to unlock free shipping 🚚`;}
+  if(!cart.length){box.innerHTML=`<div class="cart-empty"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 7h12l1.5 13h-15L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Your cart is empty..<br>Start with a piece that carries your name ✨</div>`;return;}
+  box.innerHTML=cart.map(i=>`
+    <div class="cart-item">
+      <img src="${i.img}" alt="">
+      <div class="t"><b>${i.title}</b><small>Genuine pieces from the Decent catalog</small><br>
+        <span class="qty"><button data-a="-" data-id="${i.id}">−</button><span>${i.qty}</span><button data-a="+" data-id="${i.id}">+</button></span><br>
+        <a class="rm" data-rm="${i.id}" href="#">Remove</a>
+      </div>
+      <span class="p">${fmt(i.qty*i.price)}</span>
+    </div>`).join('');
+  box.querySelectorAll('.qty button').forEach(b=>b.onclick=()=>{
+    const it=cart.find(x=>x.id===b.dataset.id);
+    it.qty+= b.dataset.a==='+'?1:-1;
+    if(it.qty<1)cart=cart.filter(x=>x.id!==it.id);
+    cartRender();
+  });
+  box.querySelectorAll('[data-rm]').forEach(a=>a.onclick=e=>{e.preventDefault();cart=cart.filter(x=>x.id!==a.dataset.rm);cartRender();});
+}
+function addToCart(p,qty=1){
+  const f=cart.find(x=>x.id===p.id);
+  if(f)f.qty+=qty;else cart.push({...p,qty});
+  cartRender();
+}
+$('#checkout').onclick=()=>toast('This is where the flow hands off to Checkout checkout in Salla ✔');
+$('#wishBtn').onclick=()=>toast(wish.size? `You have ${wish.size} item in the wishlist ♥`:'Your wishlist is empty');
+
+
+const wish=new Set();
+const HEART='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.4 5 6 5c2.2 0 3.6 1.2 4.4 2.4h1.2C12.4 6.2 13.8 5 16 5c3.6 0 5.6 3.6 4 6.7C19.5 16.3 12 21 12 21Z"/></svg>';
+const BAG='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l1.5 13h-15L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>';
+const CHECK='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>';
+const EYE='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>';
+document.addEventListener('click',e=>{
+  const add=e.target.closest('.add-btn');
+  if(add){
+    addToCart({id:add.dataset.id,title:add.dataset.title,price:+add.dataset.price,img:add.dataset.img});
+    add.classList.add('added');add.textContent='✓ Added';
+    setTimeout(()=>{add.classList.remove('added');add.textContent='Add to cart';},1400);
+    toast('Added to cart 👜');
+    return;
+  }
+  const w=e.target.closest('.wish');
+  if(w){
+    w.classList.toggle('on');
+    const id=w.closest('.pcard')?.dataset.name||'x';
+    w.classList.contains('on')? wish.add(id):wish.delete(id);
+    const c=$('#wishCount');c.textContent=wish.size;c.hidden=!wish.size;
+    toast(w.classList.contains('on')?'Added to wishlist ♥':'Removed from wishlist');
+    return;
+  }
+  const qv=e.target.closest('[data-qv]');
+  if(qv){openQV(qv.dataset.qv);}
+});
+
+
+const track=$('#cards');
+const step=()=> (track.querySelector('.pcard:not([style*="none"])')?.offsetWidth||250)+16;
+$('#carNext').onclick=()=>track.scrollBy({left:-step()*2,behavior:'smooth'});
+$('#carPrev').onclick=()=>track.scrollBy({left:step()*2,behavior:'smooth'});
+function carState(){
+  const max=track.scrollWidth-track.clientWidth;
+  $('#carNext').disabled=(-track.scrollLeft)>=max-10;   
+  $('#carPrev').disabled=track.scrollLeft>=-10;
+}
+track.addEventListener('scroll',carState,{passive:true});
+carState();
+
+let isDown=false,sx=0,sl=0;
+track.addEventListener('pointerdown',e=>{isDown=true;sx=e.clientX;sl=track.scrollLeft;});
+addEventListener('pointerup',()=>isDown=false);
+track.addEventListener('pointermove',e=>{if(!isDown)return;track.scrollLeft=sl-(e.clientX-sx);});
+
+
+(()=>{
+  const trk=$('#tTrack'),slides=trk.children.length,dots=$('#tDots');let i=0,timer;
+  for(let k=0;k<slides;k++){const d=document.createElement('button');d.className='tdot'+(k?'':' on');d.setAttribute('aria-label','Review '+(k+1));d.onclick=()=>{go(k);reset();};dots.appendChild(d);}
+  function go(n){i=(n+slides)%slides;trk.style.transform=`translateX(${i*100}%)`;[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));}
+  $('#tNext').onclick=()=>{go(i+1);reset();};
+  $('#tPrev').onclick=()=>{go(i-1);reset();};
+  function reset(){clearInterval(timer);timer=setInterval(()=>go(i+1),5000);}
+  reset();
+})();
+
+
+$$('.qa .q').forEach(q=>q.onclick=()=>{
+  const qa=q.parentElement,open=qa.classList.contains('open');
+  $$('.qa').forEach(x=>{x.classList.remove('open');x.querySelector('.a').style.maxHeight=null;});
+  if(!open){qa.classList.add('open');const a=qa.querySelector('.a');a.style.maxHeight=a.scrollHeight+'px';}
+});
+
+
+let toastT;
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),2400);}
+const rvEls=$$('.rv');
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  rvEls.forEach(el=>io.observe(el));
+}else{rvEls.forEach(el=>el.classList.add('in'));}
+
+
+const PRODUCTS=[
+ {id:'1142095290',name:"Laili medium bag 25CM (pink) to suit all your needs",cat:'Hand Bags',price:379,old:0,badge:'new',tabs:[],img:'assets/prod/c1142095290.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/pink-bag/p1142095290'},
+ {id:'1401855142',name:"Laili medium bag 25CM (sky blue) to suit all your needs",cat:'Hand Bags',price:379,old:0,badge:'new',tabs:[],img:'assets/prod/c1401855142.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Sky-blue-bag/p1401855142'},
+ {id:'1819267928',name:"Laili mini bag 19cm - sky blue - Laili & Ben bags",cat:'Hand Bags',price:299,old:0,badge:'new',tabs:[],img:'assets/prod/c1819267928.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/ليلي-اند-بين-شنط/p1819267928'},
+ {id:'2124328194',name:"Nava bag size S personalized with your letters - small women handbag",cat:'Hand Bags',price:145,old:0,badge:'best',tabs:['best'],img:'assets/prod/c2124328194.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/small-women%27s-handbags/p2124328194'},
+ {id:'1734103095',name:"Nava bag size M personalized with your letters - Nava bag",cat:'Hand Bags',price:160,old:0,badge:'best',tabs:['best'],img:'assets/prod/c1734103095.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Beige-bag/p1734103095'},
+ {id:'2058242350',name:"Nava bag size L personalized with your letters - beige bag",cat:'Hand Bags',price:179,old:0,badge:'best',tabs:['best'],img:'assets/prod/c2058242350.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Beige-bag/p2058242350'},
+ {id:'468742359',name:"Nava small - grey customized bag: letters personalization for elegance!",cat:'Hand Bags',price:145,old:0,badge:'new',tabs:[],img:'assets/prod/c468742359.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/bag---gray/p468742359'},
+ {id:'718895327',name:"Nava medium - grey customized bag: letters personalization for elegance!",cat:'Hand Bags',price:160,old:0,badge:'new',tabs:[],img:'assets/prod/c718895327.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Gray-Descent-Bag/p718895327'},
+ {id:'543802842',name:"Nava large - grey customized: letters personalization for elegance!",cat:'Hand Bags',price:179,old:0,badge:'new',tabs:[],img:'assets/prod/c543802842.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Large-handbag---decent-store/p543802842'},
+ {id:'1428480306',name:"Milly bag 25CM (black) high quality",cat:'Hand Bags',price:459,old:0,badge:'new',tabs:[],img:'assets/prod/c1428480306.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Hermes-bag,-black/p1428480306'},
+ {id:'1085534211',name:"Milly brown bag 25CM (dark brown) high quality",cat:'Hand Bags',price:459,old:0,badge:'new',tabs:[],img:'assets/prod/c1085534211.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Bag-Brown/p1085534211'},
+ {id:'490583473',name:"Kelly leather bag high quality in orange",cat:'Hand Bags',price:299,old:0,badge:'new',tabs:[],img:'assets/prod/c490583473.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Kelly-bag,-orange/p490583473'},
+ {id:'1553305847',name:"Nava small bag - black (letters personalization)",cat:'Hand Bags',price:155,old:0,badge:'best',tabs:['best'],img:'assets/prod/c1553305847.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/women%27s-small-handbag/p1553305847'},
+ {id:'1695409658',name:"Nava medium - black handbag (letters personalization)",cat:'Hand Bags',price:175,old:0,badge:'best',tabs:['best'],img:'assets/prod/c1695409658.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/black-handbag/p1695409658'},
+ {id:'1061317070',name:"Nava large - black (letters personalization)",cat:'Hand Bags',price:190,old:0,badge:'new',tabs:[],img:'assets/prod/c1061317070.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Canvas & leather · letters personalization',url:'https://decentstore20.com/en/Large-women%27s-handbag/p1061317070'},
+ {id:'115835086',name:"Travel bag (S,M,L) (letters personalization)",cat:'Travel Bags',price:385,old:0,badge:'new',tabs:[],img:'assets/prod/c115835086.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Wheels · safety lock · 3 sizes',url:'https://decentstore20.com/en/small-travel-bag-for-women/p115835086'},
+ {id:'805594523',name:"Black travel bag (S,M,L) (letters personalization)",cat:'Travel Bags',price:385,old:0,badge:'best',tabs:['best'],img:'assets/prod/c805594523.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Wheels · safety lock · 3 sizes',url:'https://decentstore20.com/en/small-travel-bag-for-women/p805594523'},
+ {id:'482234759',name:"Nava handbags set of two S & M (letters personalization)",cat:'Packages',price:280,old:0,badge:'new',tabs:[],img:'assets/prod/c482234759.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Handbag-set/p482234759'},
+ {id:'697592111',name:"Nava handbags set S, L (letters personalization)",cat:'Packages',price:299,old:0,badge:'new',tabs:[],img:'assets/prod/c697592111.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Handbags/p697592111'},
+ {id:'173699120',name:"Nava handbags set of 3 S, M, L (letters personalization)",cat:'Packages',price:450,old:0,badge:'new',tabs:[],img:'assets/prod/c173699120.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Nava-handbag-set/p173699120'},
+ {id:'1824670489',name:"Nava bags set of 3 (medium - small) + small travel bag",cat:'Packages',price:720,old:0,badge:'new',tabs:[],img:'assets/prod/c1824670489.webp',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/nava-bags/p1824670489'},
+ {id:'720396663',name:"Set of 3 travel bags S,M,L personalized for you",cat:'Packages',price:1239,old:0,badge:'new',tabs:[],img:'assets/prod/c720396663.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Travel-Luggage-Set/p720396663'},
+ {id:'1350381350',name:"Handbag M + travel bag S set (letters personalization)",cat:'Packages',price:535,old:0,badge:'best',tabs:['best'],img:'assets/prod/c1350381350.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Nava-bag/p1350381350'},
+ {id:'786893954',name:"Handbag L + travel bag S set (letters personalization)",cat:'Packages',price:555,old:0,badge:'new',tabs:[],img:'assets/prod/c786893954.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Nava-Bags/p786893954'},
+ {id:'1041840284',name:"Two handbags S & M + travel bag S set (letters personalization) for elegance & comfort!",cat:'Packages',price:700,old:0,badge:'best',tabs:['best'],img:'assets/prod/c1041840284.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Women%27s-Handbag-Set/p1041840284'},
+ {id:'1142779773',name:"Three handbags S, M, L + travel bag S set (letters personalization)",cat:'Packages',price:895,old:0,badge:'new',tabs:[],img:'assets/prod/c1142779773.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/women%27s-handbag/p1142779773'},
+ {id:'1985338160',name:"Full Nava set 3 handbags + 3 travel bags (letters personalization)",cat:'Packages',price:1720,old:0,badge:'new',tabs:[],img:'assets/prod/c1985338160.jpg',pos:'50% 50%',colors:['#E8DCC8'],meta:'Set personalized with letters',url:'https://decentstore20.com/en/Beige-travel-bags/p1985338160'}
+];
+PRODUCTS.forEach(p=>{p.promo = p.badge==='best'? 'Best Sellers' : p.badge==='new'? 'New' : '';});
+function cardHTML(p){
+  const disc=p.old? Math.round((1-p.price/p.old)*100):0;
+  return `<article class="pcard" data-name="${p.name}" data-id="${p.id}">
+    <div class="ph"><img src="${p.img}" alt="${p.name}" loading="lazy" style="object-position:${p.pos}">
+      ${p.old? '':(p.promo?`<span class="promo">${p.promo}</span>`:'')}
+      ${p.old? `<span class="disc">${disc}<small>%</small></span>`:''}
+      <div class="acts">
+        <button class="wish" aria-label="Add ${p.name} to the wishlist">${HEART}</button>
+        <button class="qv" data-qv="${p.id}" aria-label="Quick view">${EYE}</button>
+      </div></div>
+    <div class="body">
+      <h3 class="name" title="${p.name}">${p.name}</h3>
+      <div class="sub"><h4 class="price">${p.price} SAR</h4>${p.old?`<span class="price-before">${p.old} SAR</span>`:''}</div>
+      <div class="foot"><button class="add-btn" data-id="${p.id}" data-price="${p.price}" data-title="${p.name}" data-img="${p.img}">Add to cart</button></div>
+    </div></article>`;
+}
+const HAND=["1142095290", "1401855142", "1819267928", "2124328194", "1734103095", "2058242350", "468742359", "718895327", "543802842", "1428480306", "1085534211", "490583473", "1553305847", "1695409658", "1061317070"];const TRAVEL=["115835086", "805594523"];$('#handGrid').innerHTML=PRODUCTS.filter(p=>HAND.includes(p.id)).map(cardHTML).join('');
+$('#travelGrid').innerHTML=PRODUCTS.filter(p=>TRAVEL.includes(p.id)).map(cardHTML).join('');
+
+
+let qvProduct=null,qvQty=1;
+function openQV(id){
+  const p=PRODUCTS.find(x=>x.id===id);if(!p)return;
+  qvProduct=p;qvQty=1;$('#qvQty').textContent=1;
+  const img=$('#qvImg');img.src=p.img;img.style.objectPosition=p.pos;img.alt=p.name;
+  const disc=p.old? Math.round((1-p.price/p.old)*100):0;
+  const flag=$('#qvFlag');
+  if(p.old){flag.hidden=false;flag.className='flag disc';flag.textContent='-'+disc+'%';}
+  else if(p.badge==='best'){flag.hidden=false;flag.className='flag';flag.textContent='Best Sellers';}
+  else if(p.badge==='new'){flag.hidden=false;flag.className='flag alt';flag.textContent='New';}
+  else flag.hidden=true;
+  $('#qvMeta').textContent=p.meta;
+  $('#qvName').textContent=p.name;
+  $('#qvPrice').textContent=p.price+' SAR';
+  $('#qvOld').textContent=p.old? p.old+' SAR':'';
+  const d=$('#qvDisc');d.hidden=!p.old;if(p.old)d.textContent='Save '+ (p.old-p.price) +' SAR';
+  $('#qvBullets').innerHTML=['Handmade within 3 days','Free shipping for orders over SAR 405','Easy installments with Tabby & Tamara'].map(t=>`<li>${CHECK}${t}</li>`).join('');
+  $('#qvColors').innerHTML='<span>Available colors:</span>'+p.colors.map(c=>`<i style="background:${c}"></i>`).join('');
+  $('#qvLink').href=p.url;
+  $('#qview').classList.add('open');document.body.style.overflow='hidden';
+  pushRecent(id);
+}
+function closeQV(){$('#qview').classList.remove('open');document.body.style.overflow='';}
+$('#qvClose').onclick=closeQV;
+$('#qview').addEventListener('click',e=>{if(e.target.id==='qview')closeQV();});
+$('#qvPlus').onclick=()=>{qvQty++;$('#qvQty').textContent=qvQty;};
+$('#qvMinus').onclick=()=>{if(qvQty>1)qvQty--;$('#qvQty').textContent=qvQty;};
+$('#qvAdd').onclick=()=>{
+  if(!qvProduct)return;
+  addToCart({id:qvProduct.id,title:qvProduct.name,price:qvProduct.price,img:qvProduct.img},qvQty);
+  toast('Added to cart 👜');closeQV();openDrawer(cartDrawer);
+};
+
+
+let memRecent=[];
+function storeGet(){try{return JSON.parse(localStorage.getItem('decent_recent')||'[]')}catch(_){return memRecent}}
+function storeSet(r){memRecent=r;try{localStorage.setItem('decent_recent',JSON.stringify(r))}catch(_){}}
+function pushRecent(id){
+  let r=storeGet();
+  r=[id,...r.filter(x=>x!==id)].slice(0,8);
+  storeSet(r);
+  renderRecent();
+}
+function renderRecent(){
+  const r=storeGet();
+  const sec=$('#recentSec');
+  if(!r.length){sec.hidden=true;return;}
+  sec.hidden=false;
+  $('#recentStrip').innerHTML=r.map(id=>{
+    const p=PRODUCTS.find(x=>x.id===id);if(!p)return '';
+    return `<figure class="ritem" data-qv="${id}" tabindex="0" role="button" aria-label="Preview ${p.name}">
+      <img src="${p.img}" alt="${p.name}" style="object-position:${p.pos}" loading="lazy">
+      <div class="t"><b>${p.name}</b><span>${p.price} SAR</span></div></figure>`;
+  }).join('');
+}
+$('#recentClear').onclick=()=>{storeSet([]);try{localStorage.removeItem('decent_recent')}catch(_){} renderRecent();toast('Viewing history cleared');};
+renderRecent();
+
+
+const monoIn2=$('#monoIn2'),monoOut2=$('#monoOut2'),monoImg=$('#monoImg');
+function printText(v){
+  v=v.trim();
+  if(!v) return '…';
+  const ar=/[؀-ۿ]/.test(v);
+  monoOut2.classList.toggle('ar',ar);
+  const words=v.split(/\s+/).filter(Boolean);
+  let out;
+  if(words.length===1){out=words[0];}
+  else{out=words.slice(0,3).map(w=>/[a-zA-Z]/.test(w[0])?w[0].toUpperCase():w[0]).join('.');}
+  monoOut2.style.fontSize=out.length>9?(ar?'12px':'14px'):out.length>6?(ar?'15px':'18px'):(ar?'19px':'26px');
+  return out;
+}
+monoIn2.addEventListener('input',()=>{monoOut2.textContent=printText(monoIn2.value);});
+monoOut2.textContent=printText(monoIn2.value);
+$$('.mono-preview .csw').forEach(sw=>sw.onclick=()=>{
+  $$('.mono-preview .csw').forEach(x=>x.classList.remove('on'));sw.classList.add('on');
+  monoImg.src=sw.dataset.img;
+  if(sw.dataset.pz){const z=sw.dataset.pz.split(',');const el=$('#pzZone');el.style.left=z[0]+'%';el.style.top=z[1]+'%';el.style.width=z[2]+'%';el.style.height=z[3]+'%';}
+});
+$('#searchBtn').onclick=()=>{const r=$('#searchRow');r.classList.toggle('open');if(r.classList.contains('open'))$('#search').focus();};
+
+
+const VIDEOS=[
+ {id:'sgHNc39HjvA',t:'Nava cross bag with Nava mini bag',thumb:'assets/vid/v1.jpg'},
+ {id:'RRpty--LWW8',t:'Nava travel bag — small size',thumb:'assets/vid/v2.jpg'},
+ {id:'M7jXjJk1smI',t:'Laili bag — medium',thumb:'assets/vid/v3.jpg'},
+ {id:'Z9EOl3wm18s',t:'Laili bag — mini',thumb:'assets/vid/v4.jpg'},
+ {id:'Xs8u3DRvdio',t:'Nava bags — all sizes',thumb:'assets/vid/v5.jpg'},
+ {id:'rE5QIi65fJU',t:'Nava bag medium grey with packaging',thumb:'assets/vid/v6.jpg'},
+ {id:'wX61ZjZH9Vs',t:'Nava bag — Jeishi design',thumb:'assets/vid/v7.jpg'},
+ {id:'xu_2ZvIM2z0',t:'Nava bag black — medium size',thumb:'assets/vid/v8.jpg'}];
+if(VIDEOS.length){$('#vidGrid').innerHTML=VIDEOS.map(v=>`<button class="vid" data-vid="${v.id}" aria-label="Play video: ${v.t}"><img src="${v.thumb}" alt="${v.t}" loading="lazy"><span class="vplay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="vid-t">${v.t}</span></button>`).join('');}
+else{$('#videos').style.display='none';}
+const vtrack=$('#vidGrid');
+const vstep=()=> (vtrack.querySelector('.vid')?.offsetWidth||180)+14;
+$('#vidNext').onclick=()=>vtrack.scrollBy({left:-vstep()*2,behavior:'smooth'});
+$('#vidPrev').onclick=()=>vtrack.scrollBy({left:vstep()*2,behavior:'smooth'});
+$('#vidGrid').addEventListener('click',e=>{const b=e.target.closest('.vid');if(!b)return;$('#vlFrame').src='https://www.youtube-nocookie.com/embed/'+b.dataset.vid+'?autoplay=1';$('#vlight').hidden=false;document.body.style.overflow='hidden';});
+function vlClose(){$('#vlight').hidden=true;$('#vlFrame').removeAttribute('src');document.body.style.overflow='';}
+$('#vlClose').onclick=vlClose;
+$('#vlight').addEventListener('click',e=>{if(e.target.id==='vlight')vlClose();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#vlight').hidden)vlClose();});
+const PACKS=["482234759", "697592111", "173699120", "1824670489", "720396663", "1350381350", "786893954", "1041840284", "1142779773", "1985338160"];$('#pkgGrid').innerHTML=PRODUCTS.filter(p=>PACKS.includes(p.id)).map(cardHTML).join('');
+$('#cards').innerHTML=PRODUCTS.filter(p=>p.tabs.includes('best')).map(cardHTML).join('');carState();
+
+cartRender();
+</script>
+</body>
+</html>
